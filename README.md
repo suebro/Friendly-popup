@@ -31,3 +31,5 @@ A: 检查消息文件的编码格式，建议使用 UTF-8。
 Debug 版本：项目目录\x64\Debug\SweetPopups.exe
 
 Release 版本：项目目录\x64\Release\SweetPopups.exe
+
+#build.bat不可用
