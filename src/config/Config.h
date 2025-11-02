@@ -14,3 +14,4 @@ struct AppConfig {
     static AppConfig LoadFromFile(const std::wstring& filePath);
     static void SaveToFile(const AppConfig& config, const std::wstring& filePath);
 };
+ //123
