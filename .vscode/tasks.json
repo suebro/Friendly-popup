@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-with-msbuild",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                "SweetPopups.vcxproj",
+                "/p:Configuration=Debug",
+                "/p:Platform=x64"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": ["$msCompile"]
+        },
+        {
+            "label": "cleanup-process",
+            "type": "shell",
+            "command": "taskkill",
+            "args": [
+                "/f",
+                "/im",
+                "SweetPopups.exe"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "silent"
+            }
+        }
+    ]
+}
